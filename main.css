@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+*,*::after,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    /* filter: brightness(40%); */
+    background-color: rgb(63, 56, 56);
+    background-blend-mode:multiply;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    width: 60%;
+    height: auto;
+    margin-top: 2rem;
+}
+.upper {
+    text-align: center;
+}
+.upper h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 3rem;
+    color: aliceblue;
+}
+.lower {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    width: 300px;
+    margin: 0 auto;
+}
+.lower .box {
+    box-shadow: 0 0 4px wheat;
+    border-radius: 5px;
+    width: 100%;
+    height: 100px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease-in-out;
+}
+.lower .box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 6px wheat;
+}
+.lower .box:active {
+    box-shadow: 0 0 10px rgb(26, 122, 201);
+}
+.lower .box a {
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}
+#greeting {
+    font-weight: 300;
+    font-style:italic;
+    color: antiquewhite;
+    letter-spacing: 3px;
+}
+#time {
+    font-size: 7rem;
+    font-weight: 300;
+    color:white;
+}
+#dateTime {
+    color: gray;
+    line-height: 1px;
+    font-weight: 100;
+}

@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+*,*::after,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-position: center;
+    background-size: cover;
+    background-color:gray;
+    background-blend-mode: multiply;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 90%;
+    height: 90vh;
+    padding: 1rem;
+}
+.upper {
+    text-align: center;
+}
+
+.upper h1 a{
+    text-decoration: none;
+    color: wheat;
+    margin-bottom: 5px;
+}
+.upper h1 {
+    position: relative;
+}
+.upper h1:hover .tooltip {
+   visibility:visible;
+}
+.upper h1 .tooltip{
+    position: absolute;
+    color: gray;
+    font-size: .8rem;
+    top: 0;
+    margin-left: 6px;
+    visibility: hidden;
+}
+
+.lower {
+    border: 1px solid wheat;
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+.lower #form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+.lower #form label{
+    margin-right:5px;
+}
+.lower #form input[type="text"] {
+    width: 100%;
+    background:none;
+    outline: none;
+    border: none;
+    color: wheat;
+}
+.lower #form input[type="submit"] {
+    width: 50%;
+    background:none;
+    outline: none;
+    border: 1px solid wheat;
+    color: wheat;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.searchDiv {
+    margin-top: 5px;
+}
+.search {
+    border: 1px solid wheat;
+    background: none;
+    border-radius: 5px;
+    outline: none;
+    color: wheat;
+    padding: 0 0 0 10px;
+    width: 130px;
+}
+.searchBtn {
+    border: 1px solid white;
+    background: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.main {
+    border: 1px solid wheat;
+    height: 430px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.title table {
+    border-collapse: collapse;
+    border: 1px solid white;
+    table-layout: fixed;
+    width: 100%;
+}
+.title table th{
+    border: 1px solid white;
+    color: white;
+}
+.tableDiv {
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+    max-height: 400px;
+}
+.tableDiv table {
+    border-collapse: collapse;
+    border: 1px solid white;
+    width: 100%;
+    table-layout: fixed;
+}
+.tableDiv table th{
+    border: 1px solid white;
+    font-weight: 500;
+    font-size: .8rem;
+}
+/* targetting the buttons */
+#table_row button {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+}
+#table_row .edit {
+  color: yellow;
+}
+#table_row .update {
+    color: green;
+}
+#table_row .delete{
+    color: crimson;
+}
+
+.completed {
+    color: rgb(17, 237, 17);
+}
+.notcompleted {
+    color: red;
+}
+#selector {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 0 7px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+#selector option{
+    font-size: .7rem;
+    color: black;
+}
