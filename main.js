@@ -2,18 +2,20 @@ window.addEventListener('DOMContentLoaded', () => {
     const date = new Date();
     let hour = date.getHours();
     let min = date.getMinutes();
+    let sec = date.getSeconds();
     const dateYear = document.getElementById('dateTime');
     const time =document.getElementById('time');
     const greeting = document.getElementById('greeting');
     
-    hour < 10 ? '0'+hour : hour
+    setInterval(() => {
+     hour < 10 ? '0'+hour : hour
     min < 10 ? '0'+min : min
-    hour < 10 ? '0'+hour : hour
+    sec < 10 ? '0'+sec : sec
     dateYear.innerHTML = `
         ${date.getMonth()+1}:${date.getDate()}:${date.getFullYear()}
     `
     time.innerHTML = `
-        ${hour}:${min}
+        ${hour}:${min}:${sec}
     `
     if(hour >= 0 && hour <= 11){
         greeting.innerHTML = "GoodMorning"
@@ -22,5 +24,8 @@ window.addEventListener('DOMContentLoaded', () => {
     }else{
         greeting.innerHTML = "GoodEvening"
     }
+    
+    },1000)
+   
 
 })
